@@ -2,6 +2,7 @@ import 'package:e_goute_za/constants.dart';
 import 'package:e_goute_za/pages/daily_sale_history_page.dart';
 import 'package:e_goute_za/pages/home_page.dart';
 import 'package:e_goute_za/pages/order_history_page.dart';
+import 'package:e_goute_za/pages/recipe_sale_page.dart';
 import 'package:e_goute_za/pages/restaurants/extra_pizza_page.dart';
 import 'package:e_goute_za/pages/restaurants/gastro_pizza_page.dart';
 import 'package:e_goute_za/pages/restaurants/happy_king_page.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         "/restaurant/extrapizza": (context) => const ExtraPizzaPage(),
         "/restaurant/kfc": (context) => const KfcPage(),
         "/restaurant/happyking": (context) => const HappyKingPage(),
+        "/recipe/sale": (context) => const RecipeSalePage(),
       },
     );
   }
