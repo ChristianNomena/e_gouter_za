@@ -1,15 +1,14 @@
 import 'package:e_goute_za/components/app_drawer_menu.dart';
-import 'package:e_goute_za/constants.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class OrderHistoryPage extends StatefulWidget {
+  const OrderHistoryPage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _OrderHistoryPageState createState() => _OrderHistoryPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _OrderHistoryPageState extends State<OrderHistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       drawer: const AppDrawerMenu(),
       body: const SafeArea(
         child: Center(
-          child: Text("Accueil"),
+          child: Text("Historique de commande"),
         ),
       ),
     );

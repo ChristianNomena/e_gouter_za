@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: kPrimaryColor,
+          elevation: 8.0,
+          centerTitle: true,
+        ),
         drawerTheme: const DrawerThemeData(
           backgroundColor: kPrimaryColor,
           elevation: 8.0,
