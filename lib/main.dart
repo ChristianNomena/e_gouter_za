@@ -1,5 +1,7 @@
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/daily_sale_history_page.dart';
 import 'package:e_goute_za/pages/home_page.dart';
+import 'package:e_goute_za/pages/order_history_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,8 +31,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const HomePage(),
-        "/history/order": (context) => const HomePage(),
-        "/history/dailysale": (context) => const HomePage(),
+        "/history/order": (context) => const OrderHistoryPage(),
+        "/history/dailysale": (context) => const DailySaleHistoryPage(),
       },
     );
   }
