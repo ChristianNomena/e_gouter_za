@@ -11,3 +11,8 @@ const kLightColor = Color(0xFFF9F9F9);
 const kAppDrawerMenuOptionStyle = TextStyle(
   color: kLightColor,
 );
+
+const kHistoryTableData = TextStyle(
+  color: kSoftDarkColor,
+  fontSize: 13.0,
+);

@@ -16,9 +16,13 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
         title: const Text("Historique de vente journalière"),
       ),
       drawer: const AppDrawerMenu(),
-      body: const SafeArea(
-        child: Center(
-          child: Text("Historique de vente journalière"),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Card(),
+            ),
+          ],
         ),
       ),
     );
