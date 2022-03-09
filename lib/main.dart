@@ -1,4 +1,5 @@
-import 'package:e_goute_za/pages/HomePage.dart';
+import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,9 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: "e-goute'za",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        drawerTheme: const DrawerThemeData(
+          backgroundColor: kPrimaryColor,
+          elevation: 8.0,
+        ),
       ),
       initialRoute: "/",
       routes: {

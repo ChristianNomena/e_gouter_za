@@ -1,3 +1,5 @@
+import 'package:e_goute_za/components/app_drawer_menu.dart';
+import 'package:e_goute_za/constants.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,16 +10,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final data = "Hello";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("e-goute'za"),
+        backgroundColor: kPrimaryColor,
         centerTitle: true,
-        elevation: 16.0,
+        elevation: 8.0,
       ),
+      drawer: const AppDrawerMenu(),
       body: const SafeArea(
         child: Center(
           child: Text("Home Page"),
