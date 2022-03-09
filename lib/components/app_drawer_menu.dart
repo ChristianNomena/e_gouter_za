@@ -8,8 +8,8 @@ class AppDrawerMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: const [
-          DrawerHeader(
+        children: [
+          const DrawerHeader(
             child: Text(
               "Menu",
               style: TextStyle(
@@ -19,22 +19,31 @@ class AppDrawerMenu extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text(
+            title: const Text(
               "Accueil",
               style: kAppDrawerMenuOptionStyle,
             ),
+            onTap: () {
+              Navigator.pushNamed(context, "/home");
+            },
           ),
           ListTile(
-            title: Text(
+            title: const Text(
               "Historique de commande",
               style: kAppDrawerMenuOptionStyle,
             ),
+            onTap: () {
+              Navigator.pushNamed(context, "/history/order");
+            },
           ),
           ListTile(
-            title: Text(
+            title: const Text(
               "Historique de vente journalière",
               style: kAppDrawerMenuOptionStyle,
             ),
+            onTap: () {
+              Navigator.pushNamed(context, "/history/dailysale");
+            },
           ),
         ],
       ),
