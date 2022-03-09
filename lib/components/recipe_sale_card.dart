@@ -43,13 +43,11 @@ class RecipeSaleCard extends StatelessWidget {
               ),
               Container(
                 height: 40.0,
-                margin: const EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 12.0,
-                ),
+                margin: const EdgeInsets.all(10.0),
                 alignment: Alignment.bottomCenter,
                 child: Text(
                   name,
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                     color: kDarkColor,
                     fontSize: 16.0,
