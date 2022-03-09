@@ -10,6 +10,10 @@ class ExtraPizzaPage extends StatefulWidget {
 class _ExtraPizzaPageState extends State<ExtraPizzaPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Extra Pizza"),
+      ),
+    );
   }
 }

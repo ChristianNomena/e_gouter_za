@@ -10,6 +10,10 @@ class HappyKingPage extends StatefulWidget {
 class _HappyKingPageState extends State<HappyKingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Happy King"),
+      ),
+    );
   }
 }

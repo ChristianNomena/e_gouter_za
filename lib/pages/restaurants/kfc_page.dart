@@ -10,6 +10,10 @@ class KfcPage extends StatefulWidget {
 class _KfcPageState extends State<KfcPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("KFC"),
+      ),
+    );
   }
 }

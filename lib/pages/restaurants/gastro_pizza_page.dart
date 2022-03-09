@@ -10,6 +10,10 @@ class GastroPizzaPage extends StatefulWidget {
 class _GastroPizzaPageState extends State<GastroPizzaPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Gastro Pizza"),
+      ),
+    );
   }
 }

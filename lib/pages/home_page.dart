@@ -50,28 +50,48 @@ class _HomePageState extends State<HomePage> {
                             image: const AssetImage(
                               "assets/images/gastro_pizza.jpeg",
                             ),
-                            navigation: () {},
+                            navigation: () {
+                              Navigator.pushNamed(
+                                context,
+                                "/restaurant/gastropizza",
+                              );
+                            },
                           ),
                           RestaurantPresentation(
                             name: "Extra Pizza",
                             image: const AssetImage(
                               "assets/images/extra_pizza.jpg",
                             ),
-                            navigation: () {},
+                            navigation: () {
+                              Navigator.pushNamed(
+                                context,
+                                "/restaurant/extrapizza",
+                              );
+                            },
                           ),
                           RestaurantPresentation(
                             name: "KFC",
                             image: const AssetImage(
                               "assets/images/kfc.jfif",
                             ),
-                            navigation: () {},
+                            navigation: () {
+                              Navigator.pushNamed(
+                                context,
+                                "/restaurant/kfc",
+                              );
+                            },
                           ),
                           RestaurantPresentation(
                             name: "Happy King",
                             image: const AssetImage(
                               "assets/images/happy_king.jpg",
                             ),
-                            navigation: () {},
+                            navigation: () {
+                              Navigator.pushNamed(
+                                context,
+                                "/restaurant/happyking",
+                              );
+                            },
                           ),
                         ],
                       ),
