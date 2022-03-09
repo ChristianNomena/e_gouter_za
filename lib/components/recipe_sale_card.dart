@@ -5,13 +5,13 @@ class RecipeSaleCard extends StatelessWidget {
   const RecipeSaleCard({
     Key? key,
     required this.image,
+    required this.name,
     required this.price,
-    required this.isProductNew,
   }) : super(key: key);
 
   final AssetImage image;
+  final String name;
   final int price;
-  final bool isProductNew;
 
   @override
   Widget build(BuildContext context) {
@@ -19,78 +19,74 @@ class RecipeSaleCard extends StatelessWidget {
       onTap: () {
         Navigator.pushNamed(context, "/recipe/sale");
       },
-      child: Padding(
-        padding: const EdgeInsets.only(right: 24.0),
-        child: SizedBox(
-          width: 180,
-          height: 256,
-          child: Card(
-            elevation: 12.0,
-            shadowColor: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16.0),
-            ),
-            child: Stack(
-              children: [
-                Container(
-                  transform: Matrix4.translationValues(0.0, -40.0, 30.0),
-                  alignment: Alignment.center,
-                  height: 220,
-                  child: Card(
-                    elevation: 16.0,
-                    child: Image(
-                      image: image,
-                    ),
+      child: SizedBox(
+        width: 200,
+        height: 260,
+        child: Card(
+          elevation: 12.0,
+          shadowColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.0),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: double.infinity,
+                height: 150.0,
+                padding: const EdgeInsets.all(12.0),
+                alignment: Alignment.center,
+                child: Image(
+                  fit: BoxFit.cover,
+                  image: image,
+                ),
+              ),
+              Container(
+                height: 40.0,
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 12.0,
+                ),
+                alignment: Alignment.bottomCenter,
+                child: Text(
+                  name,
+                  style: const TextStyle(
+                    color: kDarkColor,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Positioned.fill(
-                  bottom: 42,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Text(
-                      "Jus de fruit",
-                      style: TextStyle(
-                        color: kDarkColor,
-                        fontSize: 14.0,
-                      ),
-                    ),
-                  ),
-                ),
-                if (isProductNew)
-                  const Positioned(
-                    top: 20,
-                    left: 42,
-                    child: Banner(
-                      color: kThirdColor,
-                      message: "NEW",
-                      location: BannerLocation.bottomEnd,
-                    ),
-                  ),
-                Positioned(
-                  bottom: 0,
-                  right: 0,
-                  child: Container(
+              ),
+              Row(
+                children: [
+                  Container(
                     width: 90,
-                    height: 33.0,
+                    height: 40,
+                    alignment: Alignment.center,
+                    child: Text("$price Ar"),
+                  ),
+                  Container(
+                    width: 102,
+                    height: 40,
+                    alignment: Alignment.center,
                     decoration: const BoxDecoration(
-                      color: kSecondaryColor,
+                      color: kThirdColor,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(16.0),
                         bottomRight: Radius.circular(16.0),
                       ),
                     ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      "$price Ar",
-                      style: const TextStyle(
+                    child: const Text(
+                      "Commander",
+                      style: TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ),
-                ),
-              ],
-            ),
+                  )
+                ],
+              ),
+            ],
           ),
         ),
       ),
