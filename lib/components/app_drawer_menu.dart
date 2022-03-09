@@ -24,7 +24,7 @@ class AppDrawerMenu extends StatelessWidget {
               style: kAppDrawerMenuOptionStyle,
             ),
             onTap: () {
-              Navigator.pushNamed(context, "/home");
+              Navigator.pushNamed(context, "/");
             },
           ),
           ListTile(
