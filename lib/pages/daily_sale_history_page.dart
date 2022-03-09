@@ -13,7 +13,7 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("e-goute'za"),
+        title: const Text("Historique de vente journalière"),
       ),
       drawer: const AppDrawerMenu(),
       body: const SafeArea(

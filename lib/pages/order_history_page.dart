@@ -13,7 +13,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("e-goute'za"),
+        title: const Text("Historique de commande"),
       ),
       drawer: const AppDrawerMenu(),
       body: const SafeArea(

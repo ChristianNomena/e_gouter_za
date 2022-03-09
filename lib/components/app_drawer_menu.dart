@@ -11,7 +11,7 @@ class AppDrawerMenu extends StatelessWidget {
         children: [
           const DrawerHeader(
             child: Text(
-              "Menu",
+              "e-goute'za",
               style: TextStyle(
                 color: kLightColor,
                 fontSize: 32.0,
