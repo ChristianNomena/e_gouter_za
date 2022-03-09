@@ -10,6 +10,22 @@ class RecipeSalePage extends StatefulWidget {
 class _RecipeSalePageState extends State<RecipeSalePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Commande"),
+      ),
+      body: const Padding(
+        padding: EdgeInsets.all(20.0),
+        child: Center(
+          child: Text(
+            "Tsy misy commande mande zany eo eh",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 30.0,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
