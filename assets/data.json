@@ -1,0 +1,34 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Gastro Pizza",
+      "shops": ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"]
+    },
+    {
+      "id": 2,
+      "name": "Extra Pizza",
+      "shops": ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"]
+    },
+    {
+      "id": 3,
+      "name": "KFC",
+      "shops": ["Ambodivona"]
+    },
+    {
+      "id": 4,
+      "name": "Happy King",
+      "shops": ["Behoririka"]
+    }
+  ],
+  "commands": [
+    {
+      "id": 1
+    }
+  ],
+  "daily_sale": [
+    {
+      "id": 1
+    }
+  ]
+}

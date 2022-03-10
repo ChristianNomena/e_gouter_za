@@ -2,6 +2,7 @@ import 'package:e_goute_za/components/history_table_gastro_pizza.dart';
 import 'package:e_goute_za/components/restaurant_banner.dart';
 import 'package:e_goute_za/components/restaurant_gastro_pizza_recipe_sale_list.dart';
 import 'package:e_goute_za/components/section_title.dart';
+import 'package:e_goute_za/components/shop_restaurant.dart';
 import 'package:flutter/material.dart';
 
 class GastroPizzaPage extends StatefulWidget {
@@ -35,16 +36,27 @@ class _GastroPizzaPageState extends State<GastroPizzaPage> {
                 ),
                 RestaurantGastroPizzaRecipeSaleList(),
                 SizedBox(
-                  height: 10.0,
+                  height: 5.0,
                 ),
                 SectionTitle(
                   title: "Peut-être aussi",
-                  subtitle: "les dernières commandes",
+                  subtitle: "nos points de vente",
                 ),
                 SizedBox(
-                  height: 12.0,
+                  height: 10.0,
                 ),
-                HistoryTableGastroPizza(),
+                ShopRestaurant(
+                  shops: ["Mahazo", "Analamahitsy", "Talatamaty"],
+                  lastShop: "Ivato",
+                ),
+                // SectionTitle(
+                //   title: "Ou bien",
+                //   subtitle: "les dernières commandes",
+                // ),
+                // SizedBox(
+                //   height: 12.0,
+                // ),
+                // HistoryTableGastroPizza(),
               ],
             ),
           ),
