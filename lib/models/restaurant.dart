@@ -1,17 +1,16 @@
-import 'package:flutter/material.dart';
+import 'package:e_goute_za/models/shop.dart';
+import 'package:e_goute_za/models/food.dart';
 
 class Restaurant {
-  Restaurant(this.id, this.name, this.shops);
+  Restaurant(this.id, this.name);
 
   final int id;
   final String name;
-  final List<String> shops;
 
   factory Restaurant.fromJson(Map<String, dynamic> json) {
     return Restaurant(
       json["id"],
       json["name"],
-      json["shops"],
     );
   }
 }

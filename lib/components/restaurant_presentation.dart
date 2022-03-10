@@ -15,49 +15,52 @@ class RestaurantPresentation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 12.0,
-      shadowColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.0),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 15.0,
-          ),
-          Text(
-            name,
-            style: const TextStyle(
-              color: kThirdColor,
-              fontSize: 28.0,
-              fontWeight: FontWeight.bold,
+    return GestureDetector(
+      onTap: navigation,
+      child: Card(
+        elevation: 12.0,
+        shadowColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 15.0,
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Card(
-              elevation: 12.0,
-              shadowColor: kThirdColor,
-              child: Image(
-                width: double.infinity,
-                height: 250.0,
-                fit: BoxFit.cover,
-                image: image,
+            Text(
+              name,
+              style: const TextStyle(
+                color: kThirdColor,
+                fontSize: 28.0,
+                fontWeight: FontWeight.bold,
               ),
             ),
-          ),
-          ElevatedButton(
-            style: ButtonStyle(
-              elevation: MaterialStateProperty.all(12.0),
-              backgroundColor: MaterialStateProperty.all(
-                kPrimaryColor,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Card(
+                elevation: 12.0,
+                shadowColor: kThirdColor,
+                child: Image(
+                  width: double.infinity,
+                  height: 250.0,
+                  fit: BoxFit.cover,
+                  image: image,
+                ),
               ),
             ),
-            onPressed: navigation,
-            child: const Text("Découvrir"),
-          ),
-        ],
+            ElevatedButton(
+              style: ButtonStyle(
+                elevation: MaterialStateProperty.all(12.0),
+                backgroundColor: MaterialStateProperty.all(
+                  kPrimaryColor,
+                ),
+              ),
+              onPressed: navigation,
+              child: const Text("Découvrir"),
+            ),
+          ],
+        ),
       ),
     );
   }

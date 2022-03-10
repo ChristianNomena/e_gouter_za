@@ -3,22 +3,218 @@
     {
       "id": 1,
       "name": "Gastro Pizza",
-      "shops": ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"]
+      "shops": [
+        {
+          "id": 1,
+          "location": "Mahazo"
+        },
+        {
+          "id": 2,
+          "location": "Analamahitsy"
+        },
+        {
+          "id": 3,
+          "location": "Talatamaty"
+        },
+        {
+          "id": 4,
+          "location": "Ivato"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "name": "Pizza Spéciale La Gastronomie Pizza",
+          "price": 30000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+        },
+        {
+          "id": 2,
+          "name": "Frites",
+          "price": 3000,
+          "image": "assets/images/gastro_pizza/gastro_frites.png"
+        },
+        {
+          "id": 3,
+          "name": "Pizza Jambon Poulet",
+          "price": 25000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+        },
+        {
+          "id": 4,
+          "name": "Sandwich Kebab",
+          "price": 8000,
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
+        },
+        {
+          "id": 5,
+          "name": "Pizza Tralala",
+          "price": 28000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
+        },
+        {
+          "id": 6,
+          "name": "Pizza 4 Fromages",
+          "price": 26000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+        }
+      ]
     },
     {
       "id": 2,
       "name": "Extra Pizza",
-      "shops": ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"]
+      "shops": [
+        {
+          "id": 1,
+          "location": "Mahazo"
+        },
+        {
+          "id": 2,
+          "location": "Analamahitsy"
+        },
+        {
+          "id": 3,
+          "location": "Talatamaty"
+        },
+        {
+          "id": 4,
+          "location": "Ivato"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "name": "Pizza Spéciale La Gastronomie Pizza",
+          "price": 30000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+        },
+        {
+          "id": 2,
+          "name": "Frites",
+          "price": 3000,
+          "image": "assets/images/gastro_pizza/gastro_frites.png"
+        },
+        {
+          "id": 3,
+          "name": "Pizza Jambon Poulet",
+          "price": 25000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+        },
+        {
+          "id": 4,
+          "name": "Sandwich Kebab",
+          "price": 8000,
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
+        },
+        {
+          "id": 5,
+          "name": "Pizza Tralala",
+          "price": 28000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
+        },
+        {
+          "id": 6,
+          "name": "Pizza 4 Fromages",
+          "price": 26000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+        }
+      ]
     },
     {
       "id": 3,
       "name": "KFC",
-      "shops": ["Ambodivona"]
+      "shops": [
+        {
+          "id": 5,
+          "location": "Ambodivona"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "name": "Pizza Spéciale La Gastronomie Pizza",
+          "price": 30000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+        },
+        {
+          "id": 2,
+          "name": "Frites",
+          "price": 3000,
+          "image": "assets/images/gastro_pizza/gastro_frites.png"
+        },
+        {
+          "id": 3,
+          "name": "Pizza Jambon Poulet",
+          "price": 25000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+        },
+        {
+          "id": 4,
+          "name": "Sandwich Kebab",
+          "price": 8000,
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
+        },
+        {
+          "id": 5,
+          "name": "Pizza Tralala",
+          "price": 28000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
+        },
+        {
+          "id": 6,
+          "name": "Pizza 4 Fromages",
+          "price": 26000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+        }
+      ]
     },
     {
       "id": 4,
       "name": "Happy King",
-      "shops": ["Behoririka"]
+      "shops": [
+        {
+          "id": 6,
+          "location": "Behoririka"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "name": "Pizza Spéciale La Gastronomie Pizza",
+          "price": 30000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+        },
+        {
+          "id": 2,
+          "name": "Frites",
+          "price": 3000,
+          "image": "assets/images/gastro_pizza/gastro_frites.png"
+        },
+        {
+          "id": 3,
+          "name": "Pizza Jambon Poulet",
+          "price": 25000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+        },
+        {
+          "id": 4,
+          "name": "Sandwich Kebab",
+          "price": 8000,
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
+        },
+        {
+          "id": 5,
+          "name": "Pizza Tralala",
+          "price": 28000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
+        },
+        {
+          "id": 6,
+          "name": "Pizza 4 Fromages",
+          "price": 26000,
+          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+        }
+      ]
     }
   ],
   "commands": [
