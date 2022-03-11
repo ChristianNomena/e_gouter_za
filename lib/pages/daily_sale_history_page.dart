@@ -143,7 +143,7 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
         ),
       ),
       trailing: Text(
-        income.total,
+        "${income.total} Ar",
         style: const TextStyle(
           color: kSoftDarkColor,
         ),

@@ -26,37 +26,43 @@
           "id": 1,
           "name": "Pizza Spéciale La Gastronomie Pizza",
           "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "restaurant": "Gastro Pizza"
         },
         {
           "id": 2,
           "name": "Frites",
           "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png"
+          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "restaurant": "Gastro Pizza"
         },
         {
           "id": 3,
           "name": "Pizza Jambon Poulet",
           "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png",
+          "restaurant": "Gastro Pizza"
         },
         {
           "id": 4,
           "name": "Sandwich Kebab",
           "price": 8000,
-          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png",
+          "restaurant": "Gastro Pizza"
         },
         {
           "id": 5,
           "name": "Pizza Tralala",
           "price": 28000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png",
+          "restaurant": "Gastro Pizza"
         },
         {
           "id": 6,
           "name": "Pizza 4 Fromages",
           "price": 26000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png",
+          "restaurant": "Gastro Pizza"
         }
       ],
       "commands": [
@@ -128,37 +134,22 @@
           "id": 1,
           "name": "Pizza Spéciale La Gastronomie Pizza",
           "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "restaurant": "Extra Pizza"
         },
         {
           "id": 2,
           "name": "Frites",
           "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png"
+          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "restaurant": "Extra Pizza"
         },
         {
           "id": 3,
           "name": "Pizza Jambon Poulet",
           "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
-        },
-        {
-          "id": 4,
-          "name": "Sandwich Kebab",
-          "price": 8000,
-          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
-        },
-        {
-          "id": 5,
-          "name": "Pizza Tralala",
-          "price": 28000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
-        },
-        {
-          "id": 6,
-          "name": "Pizza 4 Fromages",
-          "price": 26000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png",
+          "restaurant": "Extra Pizza"
         }
       ],
       "commands": [
@@ -218,37 +209,15 @@
           "id": 1,
           "name": "Pizza Spéciale La Gastronomie Pizza",
           "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "restaurant": "KFC"
         },
         {
           "id": 2,
           "name": "Frites",
           "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png"
-        },
-        {
-          "id": 3,
-          "name": "Pizza Jambon Poulet",
-          "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
-        },
-        {
-          "id": 4,
-          "name": "Sandwich Kebab",
-          "price": 8000,
-          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
-        },
-        {
-          "id": 5,
-          "name": "Pizza Tralala",
-          "price": 28000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
-        },
-        {
-          "id": 6,
-          "name": "Pizza 4 Fromages",
-          "price": 26000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "restaurant": "KFC"
         }
       ],
       "commands": [
@@ -308,37 +277,29 @@
           "id": 1,
           "name": "Pizza Spéciale La Gastronomie Pizza",
           "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "restaurant": "Happy King"
         },
         {
           "id": 2,
           "name": "Frites",
           "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png"
+          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "restaurant": "Happy King"
         },
         {
           "id": 3,
           "name": "Pizza Jambon Poulet",
           "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png"
+          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png",
+          "restaurant": "Happy King"
         },
         {
           "id": 4,
           "name": "Sandwich Kebab",
           "price": 8000,
-          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png"
-        },
-        {
-          "id": 5,
-          "name": "Pizza Tralala",
-          "price": 28000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_tralala.png"
-        },
-        {
-          "id": 6,
-          "name": "Pizza 4 Fromages",
-          "price": 26000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png",
+          "restaurant": "Happy King"
         }
       ],
       "commands": [

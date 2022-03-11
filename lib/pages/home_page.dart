@@ -1,4 +1,5 @@
 import 'package:e_goute_za/components/app_drawer_menu.dart';
+import 'package:e_goute_za/components/food_presentation_list.dart';
 import 'package:e_goute_za/components/restaurant_presentation.dart';
 import 'package:e_goute_za/components/section_title.dart';
 import 'package:e_goute_za/constants.dart';
@@ -110,11 +111,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SectionTitle(
                       title: "Ou bien",
-                      subtitle: "les meilleures recettes",
+                      subtitle: "leurs meilleures recettes",
                     ),
-                    const SizedBox(
-                      height: 20.0,
-                    ),
+                    const FoodPresentationList(),
                   ],
                 ),
               ),
