@@ -388,7 +388,9 @@
 
   "daily_sales": [
     {
-      "10 mars 2022": [
+      "id": 1,
+      "date": "10 mars 2022",
+      "incomes": [
         {
           "id": 1,
           "restaurant": "Gastro Pizza",
@@ -409,8 +411,12 @@
           "restaurant": "Happy King",
           "total": "134 000"
         }
-      ],
-      "09 mars 2022": [
+      ]
+    },
+    {
+      "id": 2,
+      "date": "09 mars 2022",
+      "incomes": [
         {
           "id": 1,
           "restaurant": "Gastro Pizza",
