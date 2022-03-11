@@ -35,6 +35,7 @@ class RestaurantFoodSaleList extends StatelessWidget {
   _getFood({required Food food}) {
     if (food.id == foods[foods.length - 1].id) {
       return RecipeSaleCard(
+        restaurant: food.restaurant,
         image: AssetImage(food.image),
         name: food.name,
         price: food.price,
@@ -44,6 +45,7 @@ class RestaurantFoodSaleList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 24.0),
       child: RecipeSaleCard(
+        restaurant: food.restaurant,
         image: AssetImage(food.image),
         name: food.name,
         price: food.price,

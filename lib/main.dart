@@ -50,7 +50,6 @@ class MyApp extends StatelessWidget {
         "/command/extrapizza": (context) => const ExtraPizzaCommandPage(),
         "/command/kfc": (context) => const KfcCommandPage(),
         "/command/happyking": (context) => const HappyKingCommandPage(),
-        "/recipe/sale": (context) => const RecipeSalePage(),
       },
     );
   }

@@ -1,4 +1,5 @@
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/recipe_sale_page.dart';
 import 'package:flutter/material.dart';
 
 class FoodPresentationCard extends StatelessWidget {
@@ -19,7 +20,19 @@ class FoodPresentationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, "/recipe/sale");
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return RecipeSalePage(
+                restaurant: restaurant,
+                name: name,
+                image: image,
+                unitPrice: price,
+              );
+            },
+          ),
+        );
       },
       child: SizedBox(
         width: 200,

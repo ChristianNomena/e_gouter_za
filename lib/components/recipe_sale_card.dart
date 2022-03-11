@@ -1,4 +1,5 @@
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/recipe_sale_page.dart';
 import 'package:flutter/material.dart';
 
 class RecipeSaleCard extends StatelessWidget {
@@ -7,8 +8,10 @@ class RecipeSaleCard extends StatelessWidget {
     required this.image,
     required this.name,
     required this.price,
+    required this.restaurant,
   }) : super(key: key);
 
+  final String restaurant;
   final AssetImage image;
   final String name;
   final int price;
@@ -17,7 +20,19 @@ class RecipeSaleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, "/recipe/sale");
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return RecipeSalePage(
+                restaurant: restaurant,
+                name: name,
+                image: image,
+                unitPrice: price,
+              );
+            },
+          ),
+        );
       },
       child: SizedBox(
         width: 200,

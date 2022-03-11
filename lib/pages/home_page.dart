@@ -116,8 +116,8 @@ class _HomePageState extends State<HomePage> {
                       height: 25.0,
                     ),
                     const SectionTitle(
-                      title: "Ou bien",
-                      subtitle: "leurs meilleures recettes",
+                      title: "Ou bien leurs",
+                      subtitle: "meilleures recettes",
                     ),
                     const FoodPresentationList(),
                   ],
