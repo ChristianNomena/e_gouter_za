@@ -21,15 +21,22 @@ class _FoodPresentationListState extends State<FoodPresentationList> {
     final data = await json.decode(response);
 
     List restaurants = data["restaurants"];
+    List<Food> foodList = [];
 
     for (var restaurant in restaurants) {
       var foods = restaurant["foods"];
 
       for (var food in foods) {
         Food newFood = ModelBuilder.buildFood(food: food);
-        allFoodList.add(newFood);
+        foodList.add(newFood);
       }
     }
+
+    foodList.shuffle();
+
+    setState(() {
+      allFoodList = foodList;
+    });
   }
 
   @override
