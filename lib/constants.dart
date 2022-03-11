@@ -12,7 +12,12 @@ const kAppDrawerMenuOptionStyle = TextStyle(
   color: kLightColor,
 );
 
-const kHistoryTableData = TextStyle(
+const kHistoryTableDataStyle = TextStyle(
   color: kSoftDarkColor,
   fontSize: 13.0,
+);
+
+const kCommandHistoryChoiceStyle = TextStyle(
+  color: kLightColor,
+  fontSize: 32.0,
 );

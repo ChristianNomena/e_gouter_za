@@ -2,19 +2,19 @@ import 'package:e_goute_za/components/app_drawer_menu.dart';
 import 'package:e_goute_za/constants.dart';
 import 'package:flutter/material.dart';
 
-class DailySaleHistoryPage extends StatefulWidget {
-  const DailySaleHistoryPage({Key? key}) : super(key: key);
+class CommandHistoryPage extends StatefulWidget {
+  const CommandHistoryPage({Key? key}) : super(key: key);
 
   @override
-  _DailySaleHistoryPageState createState() => _DailySaleHistoryPageState();
+  _CommandHistoryPageState createState() => _CommandHistoryPageState();
 }
 
-class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
+class _CommandHistoryPageState extends State<CommandHistoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Historique de vente journalière"),
+        title: const Text("Historique de commande"),
       ),
       drawer: const AppDrawerMenu(),
       body: SafeArea(
@@ -22,7 +22,9 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
           children: [
             Expanded(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "/command/gastropizza");
+                },
                 child: Container(
                   alignment: Alignment.center,
                   color: Colors.red,
@@ -36,7 +38,9 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
             ),
             Expanded(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "/command/extrapizza");
+                },
                 child: Container(
                   alignment: Alignment.center,
                   color: Colors.lightBlue,
@@ -50,7 +54,9 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
             ),
             Expanded(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "/command/kfc");
+                },
                 child: Container(
                   alignment: Alignment.center,
                   color: Colors.green,
@@ -64,7 +70,9 @@ class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
             ),
             Expanded(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "/command/happyking");
+                },
                 child: Container(
                   alignment: Alignment.center,
                   color: Colors.amber,

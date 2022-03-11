@@ -18,7 +18,7 @@ class _RecipeSalePageState extends State<RecipeSalePage> {
         padding: EdgeInsets.all(20.0),
         child: Center(
           child: Text(
-            "Tsy misy commande mande zany eo eh",
+            "500 Internal Server Error",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 30.0,

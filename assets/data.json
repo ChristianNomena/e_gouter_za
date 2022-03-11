@@ -58,6 +58,48 @@
           "price": 26000,
           "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
         }
+      ],
+      "commands": [
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders": [
+            {
+              "id": 1,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 3,
+              "amount": 9000
+            },
+            {
+              "id": 2,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 5,
+              "amount": 125000
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "09 mars 2022",
+          "orders":  [
+            {
+              "id": 3,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 10,
+              "amount": 30000
+            },
+            {
+              "id": 4,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 1,
+              "amount": 25000
+            }
+          ]
+        }
       ]
     },
     {
@@ -118,6 +160,48 @@
           "price": 26000,
           "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
         }
+      ],
+      "commands": [
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders": [
+            {
+              "id": 1,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 3,
+              "amount": 9000
+            },
+            {
+              "id": 2,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 5,
+              "amount": 125000
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "09 mars 2022",
+          "orders":  [
+            {
+              "id": 3,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 10,
+              "amount": 30000
+            },
+            {
+              "id": 4,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 1,
+              "amount": 25000
+            }
+          ]
+        }
       ]
     },
     {
@@ -165,6 +249,48 @@
           "name": "Pizza 4 Fromages",
           "price": 26000,
           "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
+        }
+      ],
+      "commands": [
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders": [
+            {
+              "id": 1,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 3,
+              "amount": 9000
+            },
+            {
+              "id": 2,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 5,
+              "amount": 125000
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders":  [
+            {
+              "id": 3,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 10,
+              "amount": 30000
+            },
+            {
+              "id": 4,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 1,
+              "amount": 25000
+            }
+          ]
         }
       ]
     },
@@ -214,17 +340,98 @@
           "price": 26000,
           "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png"
         }
+      ],
+      "commands": [
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders": [
+            {
+              "id": 1,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 3,
+              "amount": 9000
+            },
+            {
+              "id": 2,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 5,
+              "amount": 125000
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "date": "10 mars 2022",
+          "orders":  [
+            {
+              "id": 3,
+              "designation": "Frites",
+              "unit_price": 3000,
+              "quantity": 10,
+              "amount": 30000
+            },
+            {
+              "id": 4,
+              "designation": "Pizza Jambon Poulet",
+              "unit_price": 25000,
+              "quantity": 1,
+              "amount": 25000
+            }
+          ]
+        }
       ]
     }
   ],
-  "commands": [
+
+  "daily_sales": [
     {
-      "id": 1
-    }
-  ],
-  "daily_sale": [
-    {
-      "id": 1
+      "10 mars 2022": [
+        {
+          "id": 1,
+          "restaurant": "Gastro Pizza",
+          "total": "134 000"
+        },
+        {
+          "id": 2,
+          "restaurant": "Extra Pizza",
+          "total": "134 000"
+        },
+        {
+          "id": 3,
+          "restaurant": "KFC",
+          "total": "134 000"
+        },
+        {
+          "id": 4,
+          "restaurant": "Happy King",
+          "total": "134 000"
+        }
+      ],
+      "09 mars 2022": [
+        {
+          "id": 1,
+          "restaurant": "Gastro Pizza",
+          "total": "55 000"
+        },
+        {
+          "id": 2,
+          "restaurant": "Extra Pizza",
+          "total": "55 000"
+        },
+        {
+          "id": 3,
+          "restaurant": "KFC",
+          "total": "55 000"
+        },
+        {
+          "id": 4,
+          "restaurant": "Happy King",
+          "total": "55 000"
+        }
+      ]
     }
   ]
 }
