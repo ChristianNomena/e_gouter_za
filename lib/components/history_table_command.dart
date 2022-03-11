@@ -111,46 +111,4 @@ class HistoryTableCommand extends StatelessWidget {
       ],
     );
   }
-
-// _getData() {
-//   return Table(
-//     columnWidths: const {
-//       0: FractionColumnWidth(.45),
-//       1: FractionColumnWidth(.2),
-//       2: FractionColumnWidth(.125),
-//       3: FractionColumnWidth(.225),
-//     },
-//     children: const [
-//       TableRow(
-//         children: [
-//           Text(
-//             "Désignation",
-//             style: TextStyle(fontSize: 16.0),
-//           ),
-//           Align(
-//             alignment: Alignment.centerRight,
-//             child: Text(
-//               "Prix U",
-//               style: TextStyle(fontSize: 16.0),
-//             ),
-//           ),
-//           Align(
-//             alignment: Alignment.center,
-//             child: Text(
-//               "Qté",
-//               style: TextStyle(fontSize: 16.0),
-//             ),
-//           ),
-//           Align(
-//             alignment: Alignment.centerRight,
-//             child: Text(
-//               "Montant",
-//               style: TextStyle(fontSize: 16.0),
-//             ),
-//           ),
-//         ],
-//       ),
-//     ],
-//   );
-// }
 }

@@ -89,14 +89,6 @@ class _RestaurantPageState extends State<RestaurantPage> {
                 ShopRestaurant(
                   shops: shopList,
                 ),
-                // SectionTitle(
-                //   title: "Ou bien",
-                //   subtitle: "les dernières commandes",
-                // ),
-                // SizedBox(
-                //   height: 12.0,
-                // ),
-                // HistoryTableGastroPizza(),
               ],
             ),
           ),

@@ -105,6 +105,16 @@ class _HomePageState extends State<HomePage> {
                         color: kSoftDarkColor,
                       ),
                     ),
+                    const SizedBox(
+                      height: 25.0,
+                    ),
+                    const SectionTitle(
+                      title: "Ou bien",
+                      subtitle: "les meilleures recettes",
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
                   ],
                 ),
               ),
