@@ -18,6 +18,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Accueil"),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.only(right: 16.0),
+            child: Icon(Icons.search),
+          ),
+        ],
       ),
       drawer: const AppDrawerMenu(),
       body: SafeArea(
