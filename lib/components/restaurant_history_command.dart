@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:e_goute_za/components/history_table_command.dart';
 import 'package:e_goute_za/constants.dart';
 import 'package:e_goute_za/models/command.dart';
+import 'package:e_goute_za/models/model_builder.dart';
 import 'package:e_goute_za/models/order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -37,13 +38,7 @@ class _RestaurantHistoryCommandState extends State<RestaurantHistoryCommand> {
       command.remove("orders");
 
       for (var order in orders) {
-        Order newOrder = Order(
-          order["id"],
-          order["designation"],
-          order["unit_price"],
-          order["quantity"],
-          order["amount"],
-        );
+        Order newOrder = ModelBuilder.buildOrder(order: order);
 
         orderList.add(newOrder);
       }
