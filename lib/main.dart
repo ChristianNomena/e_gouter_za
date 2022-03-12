@@ -1,4 +1,5 @@
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/command_grateful_page.dart';
 import 'package:e_goute_za/pages/commands/extra_pizza_command_page.dart';
 import 'package:e_goute_za/pages/commands/gastro_pizza_command_page.dart';
 import 'package:e_goute_za/pages/commands/happy_king_command_page.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         "/command/extrapizza": (context) => const ExtraPizzaCommandPage(),
         "/command/kfc": (context) => const KfcCommandPage(),
         "/command/happyking": (context) => const HappyKingCommandPage(),
+        "/command/grateful": (context) => const CommandGratefulPage(),
       },
     );
   }

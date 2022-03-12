@@ -8,12 +8,14 @@ class RecipeSalePage extends StatefulWidget {
     required this.name,
     required this.unitPrice,
     required this.image,
+    required this.shops,
   }) : super(key: key);
 
   final String restaurant;
   final String name;
   final int unitPrice;
   final AssetImage image;
+  final List shops;
 
   @override
   _RecipeSalePageState createState() => _RecipeSalePageState();
@@ -21,7 +23,7 @@ class RecipeSalePage extends StatefulWidget {
 
 class _RecipeSalePageState extends State<RecipeSalePage> {
   int _quantity = 1;
-  String _shopValue = "One";
+  String _shopValue = "Mahazo";
 
   void incrementQuantity() {
     setState(() {
@@ -182,8 +184,12 @@ class _RecipeSalePageState extends State<RecipeSalePage> {
                         _shopValue = value!;
                       });
                     },
-                    items: <String>['One', 'Two', 'Three', 'Four']
-                        .map<DropdownMenuItem<String>>((String value) {
+                    items: <String>[
+                      'Mahazo',
+                      'Analamahitsy',
+                      'Talatamaty',
+                      'Ivato'
+                    ].map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
                         child: Text(value),
@@ -217,7 +223,9 @@ class _RecipeSalePageState extends State<RecipeSalePage> {
                     elevation: MaterialStateProperty.all(16.0),
                     backgroundColor: MaterialStateProperty.all(kPrimaryColor),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/command/grateful");
+                  },
                   child: const Text(
                     "Confirmer la Commande",
                     style: TextStyle(

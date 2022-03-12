@@ -29,6 +29,7 @@ class FoodPresentationCard extends StatelessWidget {
                 name: name,
                 image: image,
                 unitPrice: price,
+                shops: const ["Test", "Un", "Deux"],
               );
             },
           ),

@@ -29,6 +29,7 @@ class RecipeSaleCard extends StatelessWidget {
                 name: name,
                 image: image,
                 unitPrice: price,
+                shops: const ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"],
               );
             },
           ),

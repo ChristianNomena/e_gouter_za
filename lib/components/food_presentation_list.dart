@@ -68,15 +68,6 @@ class _FoodPresentationListState extends State<FoodPresentationList> {
   }
 
   _getFood({required Food food}) {
-    if (food.id == allFoodList[allFoodList.length - 1].id) {
-      return FoodPresentationCard(
-        restaurant: food.restaurant,
-        name: food.name,
-        image: AssetImage(food.image),
-        price: food.price,
-      );
-    }
-
     return Padding(
       padding: const EdgeInsets.only(right: 24.0),
       child: FoodPresentationCard(
