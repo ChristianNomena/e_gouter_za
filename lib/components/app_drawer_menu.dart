@@ -29,7 +29,7 @@ class AppDrawerMenu extends StatelessWidget {
           ),
           ListTile(
             title: const Text(
-              "Historique de commande",
+              "Votre historique de commande",
               style: kAppDrawerMenuOptionStyle,
             ),
             onTap: () {

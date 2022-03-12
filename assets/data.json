@@ -131,24 +131,24 @@
       ],
       "foods": [
         {
-          "id": 1,
-          "name": "Pizza Spéciale La Gastronomie Pizza",
-          "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "id": 7,
+          "name": "Sandwich Suprême",
+          "price": 10000,
+          "image": "assets/images/extra_pizza/extra_sandwich_supreme.jpg",
           "restaurant": "Extra Pizza"
         },
         {
-          "id": 2,
-          "name": "Frites",
-          "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "id": 8,
+          "name": "French Tacos",
+          "price": 12000,
+          "image": "assets/images/extra_pizza/extra_french_tacos.jpg",
           "restaurant": "Extra Pizza"
         },
         {
-          "id": 3,
-          "name": "Pizza Jambon Poulet",
-          "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png",
+          "id": 9,
+          "name": "Pizza Extra",
+          "price": 17000,
+          "image": "assets/images/extra_pizza/extra_pizza_extra.png",
           "restaurant": "Extra Pizza"
         }
       ],
@@ -206,17 +206,38 @@
       ],
       "foods": [
         {
-          "id": 1,
-          "name": "Pizza Spéciale La Gastronomie Pizza",
-          "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
+          "id": 10,
+          "name": "Menu 50 Hot Wings",
+          "price": 100000,
+          "image": "assets/images/kfc/kfc_menu_50_hot_wings.jpg",
           "restaurant": "KFC"
         },
         {
-          "id": 2,
+          "id": 11,
+          "name": "Menu Double Hotdog Cheesy",
+          "price": 60000,
+          "image": "assets/images/kfc/kfc_menu_double_hotdog_cheesy.jpg",
+          "restaurant": "KFC"
+        },
+        {
+          "id": 12,
+          "name": "Menu 5 Tenders",
+          "price": 50000,
+          "image": "assets/images/kfc/kfc_menu_5_tenders.jpg",
+          "restaurant": "KFC"
+        },
+        {
+          "id": 13,
           "name": "Frites",
-          "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png",
+          "price": 5000,
+          "image": "assets/images/kfc/kfc_frites.jpg",
+          "restaurant": "KFC"
+        },
+        {
+          "id": 14,
+          "name": "General Commander",
+          "price": 16000,
+          "image": "assets/images/kfc/kfc_general_commander.jpg",
           "restaurant": "KFC"
         }
       ],
@@ -274,31 +295,17 @@
       ],
       "foods": [
         {
-          "id": 1,
-          "name": "Pizza Spéciale La Gastronomie Pizza",
-          "price": 30000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_speciale_la_gastronomie_pizza.png",
-          "restaurant": "Happy King"
-        },
-        {
-          "id": 2,
-          "name": "Frites",
-          "price": 3000,
-          "image": "assets/images/gastro_pizza/gastro_frites.png",
-          "restaurant": "Happy King"
-        },
-        {
-          "id": 3,
-          "name": "Pizza Jambon Poulet",
+          "id": 15,
+          "name": "Burger Complet Meal",
           "price": 25000,
-          "image": "assets/images/gastro_pizza/gastro_pizza_jambon_poulet.png",
+          "image": "assets/images/happy_king/happy_burger_complete_meal.jpg",
           "restaurant": "Happy King"
         },
         {
-          "id": 4,
-          "name": "Sandwich Kebab",
-          "price": 8000,
-          "image": "assets/images/gastro_pizza/gastro_sandwich_kebab.png",
+          "id": 16,
+          "name": "Chicken Nuggets",
+          "price": 9000,
+          "image": "assets/images/happy_king/happy_chicken nuggets.jpg",
           "restaurant": "Happy King"
         }
       ],
