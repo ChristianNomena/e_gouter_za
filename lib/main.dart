@@ -7,7 +7,6 @@ import 'package:e_goute_za/pages/commands/kfc_command_page.dart';
 import 'package:e_goute_za/pages/daily_sale_history_page.dart';
 import 'package:e_goute_za/pages/home_page.dart';
 import 'package:e_goute_za/pages/command_history_page.dart';
-import 'package:e_goute_za/pages/recipe_sale_page.dart';
 import 'package:e_goute_za/pages/restaurants/extra_pizza_page.dart';
 import 'package:e_goute_za/pages/restaurants/gastro_pizza_page.dart';
 import 'package:e_goute_za/pages/restaurants/happy_king_page.dart';
