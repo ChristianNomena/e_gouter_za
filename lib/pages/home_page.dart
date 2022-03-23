@@ -3,6 +3,7 @@ import 'package:e_goute_za/components/food_presentation_list.dart';
 import 'package:e_goute_za/components/restaurant_presentation.dart';
 import 'package:e_goute_za/components/section_title.dart';
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/restaurant_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -58,9 +59,13 @@ class _HomePageState extends State<HomePage> {
                               "assets/images/gastro_pizza.jpeg",
                             ),
                             navigation: () {
-                              Navigator.pushNamed(
+                              Navigator.push(
                                 context,
-                                "/restaurant/gastropizza",
+                                MaterialPageRoute(
+                                  builder: (context) => const RestaurantPage(
+                                    restaurantIndex: 0,
+                                  ),
+                                ),
                               );
                             },
                           ),
@@ -70,9 +75,13 @@ class _HomePageState extends State<HomePage> {
                               "assets/images/extra_pizza.jpg",
                             ),
                             navigation: () {
-                              Navigator.pushNamed(
+                              Navigator.push(
                                 context,
-                                "/restaurant/extrapizza",
+                                MaterialPageRoute(
+                                  builder: (context) => const RestaurantPage(
+                                    restaurantIndex: 1,
+                                  ),
+                                ),
                               );
                             },
                           ),
@@ -82,9 +91,13 @@ class _HomePageState extends State<HomePage> {
                               "assets/images/kfc.jfif",
                             ),
                             navigation: () {
-                              Navigator.pushNamed(
+                              Navigator.push(
                                 context,
-                                "/restaurant/kfc",
+                                MaterialPageRoute(
+                                  builder: (context) => const RestaurantPage(
+                                    restaurantIndex: 2,
+                                  ),
+                                ),
                               );
                             },
                           ),
@@ -94,9 +107,13 @@ class _HomePageState extends State<HomePage> {
                               "assets/images/happy_king.jpg",
                             ),
                             navigation: () {
-                              Navigator.pushNamed(
+                              Navigator.push(
                                 context,
-                                "/restaurant/happyking",
+                                MaterialPageRoute(
+                                  builder: (context) => const RestaurantPage(
+                                    restaurantIndex: 3,
+                                  ),
+                                ),
                               );
                             },
                           ),

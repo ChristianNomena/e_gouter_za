@@ -1,5 +1,6 @@
 import 'package:e_goute_za/components/app_drawer_menu.dart';
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/history_command_page.dart';
 import 'package:flutter/material.dart';
 
 class CommandHistoryPage extends StatefulWidget {
@@ -29,7 +30,15 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                     elevation: 12.0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/command/gastropizza");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HistoryCommandPage(
+                              appBarTitle: "Commandes Gastro Pizza",
+                              restaurantIndex: 0,
+                            ),
+                          ),
+                        );
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -51,7 +60,15 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                     elevation: 12.0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/command/extrapizza");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HistoryCommandPage(
+                              appBarTitle: "Commandes Extra Pizza",
+                              restaurantIndex: 1,
+                            ),
+                          ),
+                        );
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -73,7 +90,15 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                     elevation: 12.0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/command/kfc");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HistoryCommandPage(
+                              appBarTitle: "Commandes KFC",
+                              restaurantIndex: 2,
+                            ),
+                          ),
+                        );
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -95,7 +120,15 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                     elevation: 12.0,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/command/happyking");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HistoryCommandPage(
+                              appBarTitle: "Commandes Happy King",
+                              restaurantIndex: 3,
+                            ),
+                          ),
+                        );
                       },
                       child: Container(
                         alignment: Alignment.center,
