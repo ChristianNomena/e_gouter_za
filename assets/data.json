@@ -64,75 +64,6 @@
           "image": "assets/images/gastro_pizza/gastro_pizza_4_fromages.png",
           "restaurant": "Gastro Pizza"
         }
-      ],
-      "commands": [
-        {
-          "id": 1,
-          "date": "09 mars 2022",
-          "orders":  [
-            {
-              "id": 1,
-              "designation": "Frites",
-              "unit_price": 3000,
-              "quantity": 10,
-              "amount": 30000
-            },
-            {
-              "id": 2,
-              "designation": "Sandwich Kebab",
-              "unit_price": 8000,
-              "quantity": 3,
-              "amount": 24000
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "date": "10 mars 2022",
-          "orders": [
-            {
-              "id": 3,
-              "designation": "Frites",
-              "unit_price": 3000,
-              "quantity": 3,
-              "amount": 9000
-            },
-            {
-              "id": 4,
-              "designation": "Pizza Jambon Poulet",
-              "unit_price": 25000,
-              "quantity": 5,
-              "amount": 125000
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "date": "11 mars 2022",
-          "orders": [
-            {
-              "id": 5,
-              "designation": "Pizza Tralala",
-              "unit_price": 28000,
-              "quantity": 1,
-              "amount": 28000
-            },
-            {
-              "id": 6,
-              "designation": "Pizza 4 Fromages",
-              "unit_price": 26000,
-              "quantity": 1,
-              "amount": 26000
-            },
-            {
-              "id": 7,
-              "designation": "Sandwich Kebab",
-              "unit_price": 8000,
-              "quantity": 2,
-              "amount": 16000
-            }
-          ]
-        }
       ]
     },
     {
@@ -177,41 +108,6 @@
           "price": 17000,
           "image": "assets/images/extra_pizza/extra_pizza_extra.png",
           "restaurant": "Extra Pizza"
-        }
-      ],
-      "commands": [
-        {
-          "id": 4,
-          "date": "10 mars 2022",
-          "orders": [
-            {
-              "id": 8,
-              "designation": "Sandwich Suprême",
-              "unit_price": 10000,
-              "quantity": 3,
-              "amount": 30000
-            },
-            {
-              "id": 9,
-              "designation": "French Tacos",
-              "unit_price": 10000,
-              "quantity": 5,
-              "amount": 50000
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "date": "11 mars 2022",
-          "orders":  [
-            {
-              "id": 10,
-              "designation": "Pizza Extra",
-              "unit_price": 17000,
-              "quantity": 2,
-              "amount": 34000
-            }
-          ]
         }
       ]
     },
@@ -260,42 +156,6 @@
           "image": "assets/images/kfc/kfc_general_commander.jpg",
           "restaurant": "KFC"
         }
-      ],
-      "commands": [
-        {
-          "id": 6,
-          "date": "11 mars 2022",
-          "orders": [
-            {
-              "id": 11,
-              "designation": "Menu 50 Hot Wings",
-              "unit_price": 100000,
-              "quantity": 1,
-              "amount": 100000
-            },
-            {
-              "id": 12,
-              "designation": "General Commander",
-              "unit_price": 16000,
-              "quantity": 2,
-              "amount": 32000
-            },
-            {
-              "id": 13,
-              "designation": "Frites",
-              "unit_price": 5000,
-              "quantity": 8,
-              "amount": 40000
-            },
-            {
-              "id": 14,
-              "designation": "Menu Double Hotdog Cheesy",
-              "unit_price": 60000,
-              "quantity": 4,
-              "amount": 240000
-            }
-          ]
-        }
       ]
     },
     {
@@ -322,40 +182,183 @@
           "image": "assets/images/happy_king/happy_chicken nuggets.jpg",
           "restaurant": "Happy King"
         }
-      ],
-      "commands": [
+      ]
+    }
+  ],
+
+  "commands": [
+    {
+      "id": 1,
+      "restaurant": "Gastro Pizza",
+      "date": "09 mars 2022",
+      "orders":  [
         {
-          "id": 7,
-          "date": "11 mars 2022",
-          "orders": [
-            {
-              "id": 15,
-              "designation": "Chicken Nuggets",
-              "unit_price": 9000,
-              "quantity": 3,
-              "amount": 27000
-            }
-          ]
+          "id": 1,
+          "designation": "Frites",
+          "unit_price": 3000,
+          "quantity": 10,
+          "amount": 30000
         },
         {
+          "id": 2,
+          "designation": "Sandwich Kebab",
+          "unit_price": 8000,
+          "quantity": 3,
+          "amount": 24000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "restaurant": "Gastro Pizza",
+      "date": "10 mars 2022",
+      "orders": [
+        {
+          "id": 3,
+          "designation": "Frites",
+          "unit_price": 3000,
+          "quantity": 3,
+          "amount": 9000
+        },
+        {
+          "id": 4,
+          "designation": "Pizza Jambon Poulet",
+          "unit_price": 25000,
+          "quantity": 5,
+          "amount": 125000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "restaurant": "Gastro Pizza",
+      "date": "11 mars 2022",
+      "orders": [
+        {
+          "id": 5,
+          "designation": "Pizza Tralala",
+          "unit_price": 28000,
+          "quantity": 1,
+          "amount": 28000
+        },
+        {
+          "id": 6,
+          "designation": "Pizza 4 Fromages",
+          "unit_price": 26000,
+          "quantity": 1,
+          "amount": 26000
+        },
+        {
+          "id": 7,
+          "designation": "Sandwich Kebab",
+          "unit_price": 8000,
+          "quantity": 2,
+          "amount": 16000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "restaurant": "Extra Pizza",
+      "date": "10 mars 2022",
+      "orders": [
+        {
           "id": 8,
-          "date": "12 mars 2022",
-          "orders":  [
-            {
-              "id": 16,
-              "designation": "Burger Complet Meal",
-              "unit_price": 25000,
-              "quantity": 5,
-              "amount": 125000
-            },
-            {
-              "id": 17,
-              "designation": "Chicken Nuggets",
-              "unit_price": 9000,
-              "quantity": 1,
-              "amount": 9000
-            }
-          ]
+          "designation": "Sandwich Suprême",
+          "unit_price": 10000,
+          "quantity": 3,
+          "amount": 30000
+        },
+        {
+          "id": 9,
+          "designation": "French Tacos",
+          "unit_price": 10000,
+          "quantity": 5,
+          "amount": 50000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "restaurant": "Extra Pizza",
+      "date": "11 mars 2022",
+      "orders":  [
+        {
+          "id": 10,
+          "designation": "Pizza Extra",
+          "unit_price": 17000,
+          "quantity": 2,
+          "amount": 34000
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "restaurant": "KFC",
+      "date": "11 mars 2022",
+      "orders": [
+        {
+          "id": 11,
+          "designation": "Menu 50 Hot Wings",
+          "unit_price": 100000,
+          "quantity": 1,
+          "amount": 100000
+        },
+        {
+          "id": 12,
+          "designation": "General Commander",
+          "unit_price": 16000,
+          "quantity": 2,
+          "amount": 32000
+        },
+        {
+          "id": 13,
+          "designation": "Frites",
+          "unit_price": 5000,
+          "quantity": 8,
+          "amount": 40000
+        },
+        {
+          "id": 14,
+          "designation": "Menu Double Hotdog Cheesy",
+          "unit_price": 60000,
+          "quantity": 4,
+          "amount": 240000
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "restaurant": "Happy King",
+      "date": "11 mars 2022",
+      "orders": [
+        {
+          "id": 15,
+          "designation": "Chicken Nuggets",
+          "unit_price": 9000,
+          "quantity": 3,
+          "amount": 27000
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "restaurant": "Happy King",
+      "date": "12 mars 2022",
+      "orders":  [
+        {
+          "id": 16,
+          "designation": "Burger Complet Meal",
+          "unit_price": 25000,
+          "quantity": 5,
+          "amount": 125000
+        },
+        {
+          "id": 17,
+          "designation": "Chicken Nuggets",
+          "unit_price": 9000,
+          "quantity": 1,
+          "amount": 9000
         }
       ]
     }

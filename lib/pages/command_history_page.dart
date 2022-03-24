@@ -35,7 +35,7 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                           MaterialPageRoute(
                             builder: (context) => const HistoryCommandPage(
                               appBarTitle: "Commandes Gastro Pizza",
-                              restaurantIndex: 0,
+                              restaurantName: "Gastro Pizza",
                             ),
                           ),
                         );
@@ -65,7 +65,7 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                           MaterialPageRoute(
                             builder: (context) => const HistoryCommandPage(
                               appBarTitle: "Commandes Extra Pizza",
-                              restaurantIndex: 1,
+                              restaurantName: "Extra Pizza",
                             ),
                           ),
                         );
@@ -95,7 +95,7 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                           MaterialPageRoute(
                             builder: (context) => const HistoryCommandPage(
                               appBarTitle: "Commandes KFC",
-                              restaurantIndex: 2,
+                              restaurantName: "KFC",
                             ),
                           ),
                         );
@@ -125,7 +125,7 @@ class _CommandHistoryPageState extends State<CommandHistoryPage> {
                           MaterialPageRoute(
                             builder: (context) => const HistoryCommandPage(
                               appBarTitle: "Commandes Happy King",
-                              restaurantIndex: 3,
+                              restaurantName: "Happy King",
                             ),
                           ),
                         );
