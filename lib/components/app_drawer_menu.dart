@@ -45,6 +45,15 @@ class AppDrawerMenu extends StatelessWidget {
               Navigator.pushNamed(context, "/history/dailysale");
             },
           ),
+          ListTile(
+            title: const Text(
+              "A propos",
+              style: kAppDrawerMenuOptionStyle,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, "/about");
+            },
+          ),
         ],
       ),
     );

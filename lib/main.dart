@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/pages/about_page.dart';
 import 'package:e_goute_za/pages/command_grateful_page.dart';
 import 'package:e_goute_za/pages/daily_sale_history_page.dart';
 import 'package:e_goute_za/pages/home_page.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
         "/history/order": (context) => const CommandHistoryPage(),
         "/history/dailysale": (context) => const DailySaleHistoryPage(),
         "/command/grateful": (context) => const CommandGratefulPage(),
+        "/about": (context) => const AboutPage(),
       },
     );
   }
