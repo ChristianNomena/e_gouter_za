@@ -1,10 +1,9 @@
-import 'dart:convert';
-
 import 'package:e_goute_za/components/food_presentation_card.dart';
+import 'package:e_goute_za/main.dart';
 import 'package:e_goute_za/models/food.dart';
 import 'package:e_goute_za/models/model_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class FoodPresentationList extends StatefulWidget {
   const FoodPresentationList({Key? key}) : super(key: key);
@@ -14,11 +13,11 @@ class FoodPresentationList extends StatefulWidget {
 }
 
 class _FoodPresentationListState extends State<FoodPresentationList> {
+  final controller = Get.put(DataController());
   List<Food> allFoodList = [];
 
   Future<void> getData() async {
-    final String response = await rootBundle.loadString("assets/data.json");
-    final data = await json.decode(response);
+    final data = await controller.data;
 
     List restaurants = data["restaurants"];
     List<Food> foodList = [];

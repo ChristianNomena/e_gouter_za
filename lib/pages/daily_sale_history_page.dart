@@ -1,12 +1,11 @@
-import 'dart:convert';
-
 import 'package:e_goute_za/components/app_drawer_menu.dart';
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/main.dart';
 import 'package:e_goute_za/models/daily_sale.dart';
 import 'package:e_goute_za/models/income.dart';
 import 'package:e_goute_za/models/model_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class DailySaleHistoryPage extends StatefulWidget {
   const DailySaleHistoryPage({Key? key}) : super(key: key);
@@ -16,11 +15,11 @@ class DailySaleHistoryPage extends StatefulWidget {
 }
 
 class _DailySaleHistoryPageState extends State<DailySaleHistoryPage> {
+  final controller = Get.put(DataController());
   List<DailySale> dailySaleList = [];
 
   Future<void> getData() async {
-    final String response = await rootBundle.loadString("assets/data.json");
-    final data = await json.decode(response);
+    final data = await controller.data;
 
     List dailySales = data["daily_sales"];
 

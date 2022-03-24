@@ -1,12 +1,11 @@
-import 'dart:convert';
-
 import 'package:e_goute_za/components/history_table_command.dart';
 import 'package:e_goute_za/constants.dart';
+import 'package:e_goute_za/main.dart';
 import 'package:e_goute_za/models/command.dart';
 import 'package:e_goute_za/models/model_builder.dart';
 import 'package:e_goute_za/models/order.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class HistoryCommandPage extends StatefulWidget {
   const HistoryCommandPage({
@@ -23,11 +22,11 @@ class HistoryCommandPage extends StatefulWidget {
 }
 
 class _HistoryCommandPageState extends State<HistoryCommandPage> {
+  final controller = Get.put(DataController());
   List<Command> commandList = [];
 
   Future<void> getData() async {
-    final String response = await rootBundle.loadString("assets/data.json");
-    final data = await json.decode(response);
+    final data = await controller.data;
 
     List commands = data["commands"];
 

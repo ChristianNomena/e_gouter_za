@@ -1,14 +1,13 @@
-import 'dart:convert';
-
 import 'package:e_goute_za/components/restaurant_banner.dart';
 import 'package:e_goute_za/components/restaurant_food_sale_list.dart';
 import 'package:e_goute_za/components/section_title.dart';
 import 'package:e_goute_za/components/shop_restaurant.dart';
+import 'package:e_goute_za/main.dart';
 import 'package:e_goute_za/models/restaurant.dart';
 import 'package:e_goute_za/models/shop.dart';
 import 'package:e_goute_za/models/food.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class RestaurantPage extends StatefulWidget {
   const RestaurantPage({Key? key, required this.restaurantIndex})
@@ -21,6 +20,7 @@ class RestaurantPage extends StatefulWidget {
 }
 
 class _RestaurantPageState extends State<RestaurantPage> {
+  final controller = Get.put(DataController());
   Restaurant restaurant = Restaurant(0, "");
 
   List<Restaurant> restaurantList = [];
@@ -28,8 +28,7 @@ class _RestaurantPageState extends State<RestaurantPage> {
   List<Food> foodList = [];
 
   Future<void> getData() async {
-    final String response = await rootBundle.loadString("assets/data.json");
-    final data = await json.decode(response);
+    final data = await controller.data;
 
     List restaurants = data["restaurants"];
     List shops = restaurants[widget.restaurantIndex]["shops"];
