@@ -12,6 +12,7 @@ Récupération du fichier JSON et mettre ses données dans le stockage interne d
 - A propos
 
 ## Données JSON
+``` json
 {
     "restaurants": [
         {
@@ -64,3 +65,4 @@ Récupération du fichier JSON et mettre ses données dans le stockage interne d
         }
     ]
 }
+```
