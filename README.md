@@ -2,15 +2,65 @@
 
 A Flutter project for INFO 593
 
-## Getting Started
+## Stockage
+Récupération du fichier JSON et mettre ses données dans le stockage interne de l'appareil.
 
-This project is a starting point for a Flutter application.
+## Pages
+- Accueil
+- Historique des commandes
+- Historique des ventes journalières
+- A propos
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Données JSON
+{
+    "restaurants": [
+        {
+            "id": restaurantId,
+            "name": restaurantName,
+            "shops": [
+                {
+                    "id": shopId,
+                    "location": shopLocation
+                }
+            ],
+            "foods": [
+                {
+                     "id": foodId,
+                     "name": foodName,
+                     "price": foodPrice,
+                     "image": foodImage,
+                  "restaurant": foodRestaurant
+                }
+            ]
+        }
+    ],
+    "commands": [
+        {
+            "id": commandId,
+            "restaurant": commandRestaurant,
+            "date": commandDate,
+            "orders":  [
+                {
+                    "id": orderId,
+                    "designation": orderDesignation,
+                    "unit_price": orderUnitPrice,
+                    "quantity": orderQuantity,
+                    "amount": orderAmount
+                }
+            ]
+        }
+    ],
+    "daily_sales": [
+        {
+            "id": dailySaleId,
+            "date": dailySaleDate,
+            "incomes": [
+                {
+                    "id": incomeId,
+                    "restaurant": incomeRestaurant,
+                    "total": incomeTotal
+                }
+            ]
+        }
+    ]
+}
